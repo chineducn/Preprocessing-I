@@ -1,6 +1,12 @@
-.content-Font {
-  color: red;
-  font-size: 0.5rem;
+.content-font {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Advent Pro', sans-serif;
+}
+.flex-it {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -131,6 +137,10 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+html,
+body {
+  height: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -141,6 +151,8 @@ table {
 }
 * .container header {
   padding: 20px;
+  padding-right: 0;
+  margin-right: 0;
 }
 * .container header nav {
   text-align: center;
@@ -150,17 +162,34 @@ table {
 }
 * .container header nav a {
   text-decoration: none;
-  color: black;
   padding: 10px;
+  color: black;
+  font-size: 1rem;
+  font-family: 'Advent Pro', sans-serif;
 }
 * .container .heading {
   font-family: 'Oswald', sans-serif;
+  font-size: 1.5rem;
 }
 * .container .introduction {
   background-color: #c3d8d8;
   height: 50%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  flex-direction: column;
 }
-html,
-body {
-  height: 100%;
+* .container .introduction img {
+  width: 200px;
+}
+* .container .introduction h1 {
+  font-size: 2rem;
+}
+* .container .introduction button {
+  width: 150px;
+}
+* .container p {
+  color: black;
+  font-size: 1rem;
+  font-family: 'Advent Pro', sans-serif;
 }

@@ -1,9 +1,16 @@
 @headerFontFamily: 'Oswald', sans-serif;
-@headerFontSize: 1rem;
+@headerFontSize: 1.5rem;
 
-.content-Font {
-	color    : red;
-	font-size: 0.5rem;
+.content-font {
+	color      : black;
+	font-size  : 1rem;
+	font-family: 'Advent Pro', sans-serif;
+}
+
+.flex-it {
+	display        : flex;
+	justify-content: space-around;
+	padding: 10px;
 }
 
 // Is this working?
@@ -144,6 +151,12 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+
+html,
+body {
+	height: 100%;
+}
+
 * {
 	box-sizing: border-box;
 
@@ -153,7 +166,9 @@ table {
 		height: 100%;
 
 		header {
-			padding: 20px;
+			padding      : 20px;
+			padding-right: 0;
+			margin-right : 0;
 
 			nav {
 				text-align     : center;
@@ -163,25 +178,40 @@ table {
 
 				a {
 					text-decoration: none;
-					color: black;
-					padding: 10px;
+					color          : black;
+					padding        : 10px;
+					.content-font();
 				}
 			}
 		}
 
 		.heading {
 			font-family: @headerFontFamily;
+			font-size: @headerFontSize;
 		}
 
 		.introduction {
 			background-color: #c3d8d8;
-			height: 50%;
+			height          : 50%;
+			.flex-it();
+			flex-direction: column;
+
+			img {
+				width: 200px;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			button {
+				width: 150px;
+			}
 
 		}
-	}
-}
 
-html,
-body {
-	height: 100%;
+		p {
+			.content-font();
+		}
+	}
 }
