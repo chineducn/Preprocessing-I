@@ -147,8 +147,16 @@ table {
   justify-content: flex-end;
   align-items: center;
 }
+* .container header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
 * .container .heading {
   font-family: 'Oswald', sans-serif;
+}
+* .container .introduction {
+  background-color: #ccffff;
 }
 html,
 body {
